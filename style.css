@@ -1,0 +1,32 @@
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
+#imgLogo {
+    width: 100px; 
+    height: 75px;
+}
+
+header {
+    overflow: hidden;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+.descricaoTexto {
+    font-size: 20px;
+}
+
+#botaoSalvar:hover {
+    background-color: green;
+}
+
+#botaoComprar {
+    background-color: violet;
+}
+
+#botaoComprar:hover {
+    background-color: pink;
+}
