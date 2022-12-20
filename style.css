@@ -3,7 +3,7 @@
 }
 
 #imgLogo {
-    width: 100px; 
+    width: 120px; 
     height: 75px;
 }
 
@@ -29,4 +29,10 @@ h2 {
 
 #botaoComprar:hover {
     background-color: pink;
+}
+
+#linksSociais {
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 0.5%
 }
