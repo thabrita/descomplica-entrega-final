@@ -15,16 +15,17 @@ h2 {
     font-size: 35px;
 }
 
+#navLinks:hover {
+    text-decoration: underline;
+}
+
 .descricaoTexto {
     font-size: 20px;
 }
 
-#botaoSalvar:hover {
-    background-color: green;
-}
-
 #botaoComprar {
-    background-color: violet;
+    background-color: #dc6874;
+    color: white;
 }
 
 #botaoComprar:hover {
@@ -35,4 +36,17 @@ h2 {
     cursor: pointer;
     font-size: 1.5rem;
     padding: 0.5%
+}
+
+footer p {
+    background-color: #dc6874;
+}
+
+#cardLogo {
+    width: 10rem;
+    height: 10rem;
+}
+
+.imgEquipe {
+    border-radius: 100px;
 }

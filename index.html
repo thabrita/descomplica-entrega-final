@@ -12,66 +12,69 @@
     <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg="nest"></script>
     <title>Papelaria das irmãs</title>
 </head>
-<body>
-    <header class="container-fluid p-0 text-center">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-              <img src="img/logo.png" class="rounded w-10 h-10" id="imgLogo">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                <ul class="navbar-nav mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">Início</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Quem somos</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link" href="#" aria-expanded="false">
-                      Produtos </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
+<body class="bg-light">
+    <header class="container-fluid p-0 text-center bg-light">
+        <nav class="p-3 h4">
+          <ul class="nav justify-content-center">
+            <li class="nav-item" id="navLinks">
+              <a class="nav-link active text-dark" href="#inicio">Início</a>
+            </li>
+            <li class="nav-item" id="navLinks">
+              <a class="nav-link text-dark" href="#produtos">Produtos</a>
+            </li>
+            <li class="nav-item" id="navLinks">
+              <a class="nav-link text-dark" href="#equipe">Quem somos</a>
+            </li>
+          </ul>
           </nav>
-          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="true">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
             <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                  aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                  aria-label="Slide 2"></button>
-          </div>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+            </div>
             <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="img/carousel/boasfestas.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="img/carousel/ofertas.png" class="d-block w-100" alt="...">
+                <div class="carousel-item active">
+                    <img src="img/carousel/banner1.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/carousel/boasfestas.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/carousel/banner3.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/carousel/banner2.png" class="d-block w-100" alt="...">
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Anterior</span>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Próximo</span>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
             </button>
-          </div>
+        </div>
     </header>
 
-    <section class="container-fluid bg-light text-center p-3">
+    <section class="container-fluid bg-light text-center p-4 mt-3" id="inicio">
         <h2>Início</h2>
         <p class="descricaoTexto">Seja Bem-vindo(a) a Papelaria das Irmãs. <br>
-          Aqui você encontra tudo para seu material escolar e presentes para pessoas especiais.</p>
+          Aqui você encontra tudo para seu dia a dia e presentes para pessoas especiais.</p>
     </section>
     
-    <section class="container-fluid bg-light text-center p-5">
+    <section class="container-fluid bg-light text-center p-5" id="produtos">
       <div>
         <h2>Produtos</h2>
-        <p class="descricaoTexto">Cadernos, Canetas, Lápis e Borrachas</p>
+        <p class="descricaoTexto">Cadernos e Canetas</p>
       </div> 
         <div class="row row-cols-1 row-cols-md-4 g-4">
             <div class="col">
@@ -79,7 +82,8 @@
                 <img src="img/produtos/caderno1.jpg" class="card-img-top" alt="caderno">
                 <div class="card-body">
                   <h5 class="card-title">Caderno Íris</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text">Caderno de bolinhas. Tamanho médio. 96 folhas. <br><br>
+                  <strong>R$ 29,90</strong></p>
                   <button class="btn" id="botaoComprar">Comprar</button>
                 </div>
               </div>
@@ -89,7 +93,8 @@
                 <img src="img/produtos/caderno2.jpg" class="card-img-top" alt="caderno">
                 <div class="card-body">
                   <h5 class="card-title">Caderno Orquídea</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text">Bloco de notas sem linhas. Tamanho médio. 96 folhas. <br><br>
+                    <strong>R$ 26,90</strong></p>
                   <button class="btn" id="botaoComprar">Comprar</button>
                 </div>
               </div>
@@ -99,7 +104,8 @@
                 <img src="img/produtos/caderno3.jpg" class="card-img-top" alt="caderno">
                 <div class="card-body">
                   <h5 class="card-title">Caderno Girassol</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                  <p class="card-text">Caderno tipo fichário. Tamanho grande. 150 folhas. <br><br>
+                    <strong>R$ 49,90</strong></p>
                   <button class="btn" id="botaoComprar">Comprar</button>
                 </div>
               </div>
@@ -109,7 +115,8 @@
                 <img src="img/produtos/caderno4.jpg" class="card-img-top" alt="caderno">
                 <div class="card-body">
                   <h5 class="card-title">Caderno Margarida</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text">Caderno simples sem linhas. Tamanho médio. 150 folhas. <br><br>
+                    <strong>R$ 35,90</strong></p>
                   <button class="btn" id="botaoComprar">Comprar</button>
                 </div>
               </div>
@@ -124,7 +131,8 @@
                 <img src="img/produtos/canetas1.jpg" class="card-img-top" alt="canetas coloridas">
                 <div class="card-body">
                   <h5 class="card-title">Caneta Cacto</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text">Caneta em gel. Escrita média. Várias cores disponíveis. <br><br>
+                    <strong>R$ 11,90</strong></p>
                   <button class="btn" id="botaoComprar">Comprar</button>
                 </div>
               </div>
@@ -134,7 +142,8 @@
                 <img src="img/produtos/canetas2.jpg" class="card-img-top" alt="canetas coloridas">
                 <div class="card-body">
                   <h5 class="card-title">Caneta Bambu</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text">Caneta bicolor. Escrita final e cor azul. <br><br>
+                    <strong>R$ 9,90</strong></p>
                   <button class="btn" id="botaoComprar">Comprar</button>
                 </div>
               </div>
@@ -144,7 +153,8 @@
                 <img src="img/produtos/canetas3.jpg" class="card-img-top" alt="canetas coloridas">
                 <div class="card-body">
                   <h5 class="card-title">Caneta Violeta</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                  <p class="card-text">Caneta para desenho. Escrita média. Várias cores disponíveis. <br><br>
+                    <strong>R$ 9,90</strong></p>
                   <button class="btn" id="botaoComprar">Comprar</button>
                 </div>
               </div>
@@ -154,7 +164,8 @@
                 <img src="img/produtos/canetas4.jpg" class="card-img-top" alt="canetas coloridas">
                 <div class="card-body">
                   <h5 class="card-title">Caneta Tulipa</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text">Caneta em gel. Escrita fina. Várias cores disponíveis. <br><br>
+                    <strong>R$ 12,90</strong></p>
                   <button class="btn" id="botaoComprar">Comprar</button>
                 </div>
               </div>
@@ -162,38 +173,49 @@
           </div>
     </section>
 
-    <section class="container-fluid bg-light text-center p-5">
+    <section class="container-fluid bg-light text-center p-5" id="equipe">
       <div>
-        <h2>Nossa equipe</h2>
+        <h2>Quem somos</h2>
+        <p class="descricaoTexto">Um pouco da nossa história</p>
+      </div>
+      <div>
+        <img class="rounded" id="cardLogo" src="img/logo.png" alt="Logotipo da loja">
+        <div class="m-3">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, consectetur quos. Incidunt molestias at, nihil ipsam, officia iusto sint minima voluptates repellendus, quisquam deleniti. Dolores consectetur at officiis excepturi molestias.</p>
+        </div>
+      </div>
+      <div class="mt-5">
+        <h3>Nossa equipe</h3>
         <p class="descricaoTexto">As pessoas que fazem a PDI</p>
       </div>
       <div class="card-group">
-        <div class="card">
-          <img src="https://img.freepik.com/free-photo/cheerful-curly-business-girl-wearing-glasses_176420-206.jpg?w=740&t=st=1671131808~exp=1671132408~hmac=e62305033f327660ee9aa4114feed3f32256eac471732db6ff1e6b5fc8503742" class="card-img-top" alt="mulher de óculos">
+        <div class="card border-0 bg-light">
+          <img class="imgEquipe" src="https://img.freepik.com/free-photo/indoor-shot-young-cheerful-dark-haired-woman-keeping-raised-hand-her-chest-laughing-happily-with-closed-eyes-isolated-blue-wall_295783-11258.jpg?w=740&t=st=1671558235~exp=1671558835~hmac=fd109282ae64ea6da116b3c3acacc8ca566aefc1900b471344a58827abb64124" class="card-img-top" alt="mulher de óculos">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">Joana Silva</h5>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
           </div>
         </div>
-        <div class="card">
-          <img src="https://img.freepik.com/free-photo/happiness-wellbeing-confidence-concept-cheerful-attractive-african-american-woman-curly-haircut-cross-arms-chest-self-assured-powerful-pose-smiling-determined-wear-yellow-sweater_176420-35063.jpg?w=740&t=st=1671131928~exp=1671132528~hmac=09b7d6ea3147465102e5c8b20650653ed9bf75fa9b65303d04220082f43c093f" class="card-img-top" alt="...">
+        <div class="card border-0 bg-light">
+          <img class="imgEquipe" src="https://img.freepik.com/free-photo/headshot-beautiful-dark-skinned-curly-has-pleased-expression-rejoices-success-enjoys-spare-time-wears-casual-t-shirt-isolated-yellow-wall-people-positive-emotions-feelings-concept_273609-27729.jpg?w=740&t=st=1671558578~exp=1671559178~hmac=2a82c70ef20a3ed88a6f142fb5d5a4ad336f8c4098f5a1e80d64786713c1f6c2" class="card-img-top" alt="mulher sorrindo">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">Talita Silva</h5>
             <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
           </div>
         </div>
-        <div class="card">
-          <img src="https://img.freepik.com/free-photo/portrait-dark-skinned-cheerful-woman-with-curly-hair-touches-chin-gently-laughs-happily-enjoys-day-off-feels-happy-enthusiastic-hears-something-positive-wears-casual-blue-turtleneck_273609-43443.jpg?w=740&t=st=1671131969~exp=1671132569~hmac=9178b18c32570af0fcb9f0511bdc424d5eab6c4a8157ba60d3ab583fc23927f0" class="card-img-top" alt="...">
+        <div class="card border-0 bg-light">
+          <img class="imgEquipe" src="https://img.freepik.com/free-photo/portrait-dark-skinned-cheerful-woman-with-curly-hair-touches-chin-gently-laughs-happily-enjoys-day-off-feels-happy-enthusiastic-hears-something-positive-wears-casual-blue-turtleneck_273609-43443.jpg?w=740&t=st=1671131969~exp=1671132569~hmac=9178b18c32570af0fcb9f0511bdc424d5eab6c4a8157ba60d3ab583fc23927f0" class="card-img-top" alt="mulher sorrindo">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">Ana Silva</h5>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <footer class="container-fluid bg-secondary p-2 text-center text-white">
-        <p class="m-2">
+    <footer class="container-fluid m-0 text-center text-white">
+      <div>
+        <p class="p-2">
           Rua da Fantasia, Nº 123
           <br>
           (12) 3456-7890
@@ -205,6 +227,7 @@
           <i class="fab fa-twitter" id="linksSociais"></i>
           <i class="fab fa-tiktok" id="linksSociais"></i>
         </p>
+      </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
